@@ -1,0 +1,15 @@
+.single-detail{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.detail-heading{
+    text-align: right;
+}
+
+.detail-content{
+    width: 100%;
+    max-width: 100%;
+}

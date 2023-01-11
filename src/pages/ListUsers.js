@@ -4,11 +4,12 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import "../styles/listUsers.css"
 import getData from '../helpers/getData';
+import { useNavigate } from "react-router-dom"
 
 export default function ListUsers() {
 
     const [users, setUsers] = React.useState([])    
-
+    const navigate = useNavigate()
     React.useEffect(() =>{
 
         let getUser = async() => {
@@ -19,6 +20,16 @@ export default function ListUsers() {
         }
         getUser()
     }, [])
+
+    function HomeToDetails(username, userDetail, allUsers){
+        const state = {
+            userDetail,
+            allUsers
+        }
+
+        console.log(state);
+        navigate(`/user/${username}`, {state})
+    }
 
     return (
         <div className='list-users center'>
@@ -47,7 +58,7 @@ export default function ListUsers() {
                             {
                                 users.map((user, index, allUsers) => {
                                     return (
-                                        <div className="">
+                                        <div key={user.name} onClick={() => HomeToDetails(user.username, user, allUsers)}>
                                             <div className='username-card'>
                                                 <img src={user.profilepicture} alt={`Profile of ${user.name}`} className='profile-picture'/>
                                                 <p>{user.name}</p>

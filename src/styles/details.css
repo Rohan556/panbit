@@ -1,0 +1,18 @@
+.details-container{
+    align-items: center;
+}
+
+.details-image{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+
+.align{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+}
+
+

@@ -1,0 +1,17 @@
+.userdetails-container{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.main-part{
+    width: 100%;
+    padding: 30px;
+}
+
+.profile{
+    height: 90%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
