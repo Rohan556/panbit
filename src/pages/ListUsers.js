@@ -38,6 +38,7 @@ export default function ListUsers() {
                 width: "95vw",
                 borderRadius: 7,
                 height: "65vh",
+                boxShadow: "5px 5px 25px rgba(0,0,0, 0.2)"
             }}>
                 <CardContent
                     sx={{

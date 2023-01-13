@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/details.css'
+import ShowDetails from '../ShowDetails'
 
 function Details(props) {
 
@@ -23,13 +24,28 @@ function Details(props) {
     ]
     
 
+    const companyInfo = [
+        {
+            "heading" : "Name",
+            value: props.userDetail.company.name
+        },
+        {
+            "heading" : "catchphrase",
+            value: props.userDetail.company.catchPhrase
+        },
+        {
+            "heading" : "bs",
+            value: props.userDetail.company.bs
+        },
+    ]
     return (
         <div className='details-container align'>
             <img src={props.userDetail.profilepicture} className="details-image" alt="" />
-            <span>{props.userDetail.name}</span>
-            {
-
-            }
+            <span className='user-name information'>{props.userDetail.name}</span>
+            <ShowDetails infos={personalInfo} />
+            <hr className='details-divider'/>
+            <span className='company-text'>Company</span>
+            <ShowDetails infos={companyInfo} />
         </div>
     )
 }

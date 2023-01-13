@@ -1,14 +1,18 @@
 import React from 'react'
 import "../styles/showDetail.css"
 
-function ShowDetails() {
+function ShowDetails(props) {
     return (
         <div className='detail-content'>
             {
-                <div className='single-detail'>
-                    <span className='detail-heading'>Username : </span>
-                    <span>&nbsp;{props.userDetail.username}</span>
-                </div>
+                props.infos.map((info) => {
+                    return (
+                        <div className='single-detail' key={info.value}>
+                            <span className='detail-heading'>{info.heading} : </span>
+                            <span className='detail-info'>&nbsp;{info.value}</span>
+                        </div>
+                    )
+                })
             }
             </div>
     )

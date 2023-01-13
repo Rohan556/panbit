@@ -1,17 +1,56 @@
 .userdetails-container{
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 10px 30px;
 }
 
 .main-part{
     width: 100%;
-    padding: 30px;
+    padding: 0 30px;
 }
 
 .profile{
     height: 90%;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 35% 5% 60%;
+}
+
+.profile-divider{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 17px;
+    width: 0px;
+    opacity: 0.3;
+}
+
+.profile-address{
+    flex-basis: 100%;
+}
+
+.header-divider{
+    opacity: 0.3;
+}
+
+.active-link{
+    opacity: 1.0
+}
+
+.inactive-link{
+    opacity: 0.5;
+}
+
+.coming-soon{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 80px;
+    opacity: 0.1;
+}
+
+.comingsoon-text{
+    position: relative;
+    bottom: 50px;
+    font-weight: 600;
 }

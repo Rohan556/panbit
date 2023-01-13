@@ -2,11 +2,20 @@
     display: grid;
     width: 100%;
     height: auto;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 32% 70%;
+    margin: 10px 0;
 }
 
 .detail-heading{
     text-align: right;
+    font-size: 17px;
+    opacity: 0.5;
+}
+
+.detail-info{
+    font-size: 17px;
+    opacity: 0.7;
+    font-weight: 600;
 }
 
 .detail-content{

@@ -1,0 +1,36 @@
+.address-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.address-image{
+    width: 100%;
+    height: 50%;
+    border-radius: 9px;
+}
+
+.address-txt{
+    font-size: 17px;
+    opacity: 0.5;
+}
+
+.lat-long{
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.lat{
+    opacity: 0.5;
+    font-size: 11px;
+    position: relative;
+    bottom: 1px;
+}
+
+.sd{
+    position: relative;
+    right: 80px;
+    bottom: 10px;
+}
